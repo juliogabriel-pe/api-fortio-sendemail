@@ -5,8 +5,8 @@ const carteiro = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'juliogabrielti@gmail.com',
-        pass: 'viut kvfq bmmp ttkf'
+        user: '',
+        pass: ''
     },
     tls: {
         rejectUnauthorized: false
@@ -14,8 +14,8 @@ const carteiro = nodemailer.createTransport({
 });
 
 carteiro.sendMail({
-    from: 'Fortio Transportadora <juliogabrielti@gmail.com>',
-    to: 'jgpjuliope@gmail.com',
+    from: 'Fortio Transportadora <>',
+    to: '',
     subject: 'Teste de envio de e-mail usando o Nodemailer',
     html: '<h1>Olá,</h1><p>Esse é um teste de envio de e-mail usando o Nodemailer.</p>',
     text: 'Esse é um teste de envio de e-mail usando o Nodemailer.'
